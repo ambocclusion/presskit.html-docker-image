@@ -1,1 +1,4 @@
 presskit.html is by pixelnest (https://github.com/pixelnest/presskit.html)
+
+## How to use
+Type `docker run -it -d -p 8080:8080 ambocclusion/presskit.html:latest -v /home/node/presskit/site:/location/on/host/machine` into a terminal. If the location on host machine is empty, it'll create a new data setup to start using presskit right away!
