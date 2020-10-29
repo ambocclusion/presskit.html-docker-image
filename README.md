@@ -15,6 +15,8 @@ services:
       - /path/on/host:/home/node/presskit/site 
 ```
 
+then run `docker-compose up -d`
+
 if you like command line better, run this in a terminal: `docker run -it -d -p 8080:8080 --rm ambocclusion/presskit.html:latest -v /location/on/host/machine:/home/node/presskit/site`
 
 If the location on host machine is empty, it'll create a new data setup to start using presskit right away!
