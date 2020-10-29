@@ -5,14 +5,14 @@ Create a new folder on your machine, and inside that folder create a `docker-com
 
 
 ```
-version: "3.8"<br>
-services: <br>
-  presskit: <br>
-    image: ambocclusion/presskit.html <br>
-    ports: <br>
-      - "8080:8080" <br>
-    volumes: <br>
-      - /path/on/host:/home/node/presskit/site <br>
+version: "3.8"
+services: 
+  presskit: 
+    image: ambocclusion/presskit.html 
+    ports: 
+      - "8080:8080" 
+    volumes: 
+      - /path/on/host:/home/node/presskit/site 
 ```
 
 if you like command line better, run this in a terminal: `docker run -it -d -p 8080:8080 --rm ambocclusion/presskit.html:latest -v /location/on/host/machine:/home/node/presskit/site`
