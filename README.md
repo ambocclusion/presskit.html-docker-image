@@ -13,6 +13,8 @@ services:
       - "8080:8080" 
     volumes: 
       - /path/on/host:/home/node/presskit/site 
+    environment:
+      - collapsemenu=TRUE
 ```
 
 then run `docker-compose up -d`
